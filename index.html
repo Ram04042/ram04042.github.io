@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Web Portfolio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    
+    <!-- header area -->
+    <header id="header">
+        <div class="row m-0">
+            <div class="col-3 bgcolor-black">
+                <nav class="primary-nav navbar-expand-md">
+                    <div class="site-title text-center text-light py-5">
+                        <p class="description text-uppercase font-os">Ramakrishnan.V</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <a href="#home" class="nav-item nav-link text-white-50 font-os font-size-16 active">Home</a>
+                        <a href="#about_me" class="nav-item nav-link text-white-50 font-os font-size-16 active">About</a>
+						<a href="#work_portfolio" class="nav-item nav-link text-white-50 font-os font-size-16 active">Work Portfolio</a>
+						
+                        <a href="#ability" class="nav-item nav-link text-white-50 font-os font-size-16 active">Education & Skills</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <button class="toggle-button"><span class="fas fa-bars fa-2x"></span></button>
+        <div class="social">
+            <span class="mr-3"><i class="fab fa-facebook-f"></i></span>
+            <span class="mr-3"><i class="fab fa-twitter"></i></span>
+            <span class="mr-3"><i class="fab fa-instagram"></i></span>
+            <span class="mr-3"><i class="fab fa-youtube"></i></span>
+        </div>
+    </header>
+    <!-- #header area -->
+    
+    <main id="site-main">
+        <div class="row m-0">
+            <div class="col-md-9 offset-md-3 px-0">
+
+                <!-- site-banner area -->
+                <section class="site-banner" id="home">
+                    <div class="banner-area">
+                        <div class="author text-center">
+                            <div class="author-img"></div>
+                            <h1 class="font-staat font-size-40 text-uppercase py-3">Ramakrishnan.V</h1>
+                            <h5 id="type" class="font-ram font-size-27">I'm a <span id="typed"></span></h5>
+                        </div>
+                    </div>
+                </section>
+                <!-- #site-banner area -->
+
+                <!-- about me area -->
+                    <section class="about px-4 my-5" id="about_me">
+                        <div class="me py-2">
+                            <h5 class="text-uppercase font-os font-size-16 text-muted">information</h5>
+                            <h2 class="text-uppercase font-staat font-size-34">About Me</h2>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-sm-3 pl-0">
+                                <img src="./assets/about.jpeg" alt="profile image" class="img-fluid">
+                            </div>
+                            <div class="col-sm-6">
+                                <h6 class="text-uppercase font-os font-size-16 text-muted">About Me</h6>
+                                <p class="font-ram text-black-50 py-2">
+                                    Hi, My name is Ramakrishnan. I am a self motivated professional with strong technical skills and have the ability to learn new things quickly and work as a team.
+                                </p>
+                                <div class="d-flex flex-row flex-wrap justify-content-between py-4">
+                                    <div class="d-flex flex-column">
+                                        <p class="font-ram"><b>Birthday: </b><span class="text-black-50">04 February 1999</span></p>
+                                        <p class="font-ram"><b>Live at: </b><span class="text-black-50">Mumbai, India</span></p>
+                                        <p class="font-ram"><b>Phone: </b><span class="text-black-50">022 1234 5678</span></p>
+                                    </div>
+                                    
+                                </div>
+                                <button class="btn btn-dark text-uppercase mr-3">Hire ME</button>
+                                <button class="btn btn-dark text-uppercase mr-3">Download CV</button>
+                            </div>
+                        </div>
+                    </section>
+                <!-- #about me area -->
+				
+
+
+				<!-- # my works -->
+				<section class="work_portfolio px-4 my-5" id="work_portfolio">
+				<h2 class="text-uppercase font-staat font-size-34">Work Portfolio</h2>
+					<div class="container">
+
+		<ul id="filters" class="clearfix" style="padding-top:15px;">
+			<li><span class="filter active" data-filter=".app, .card, .icon, .logo, .web">All</span></li>
+			<li><span class="filter" data-filter=".app">App</span></li>
+			<li><span class="filter" data-filter=".card">Machine Learning</span></li>
+			<li><span class="filter" data-filter=".icon">IOT</span></li>
+			<li><span class="filter" data-filter=".web">Web</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+							
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/app/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Food Delivery App (HungryKing)</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Job Portal</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+
+				
+			
+						
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/app/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Easy Shopping</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Rajasthani Rangrez</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																															
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Graduate Admission Predictor</a>
+							<span class="text-category">Machine Learning</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Home Automation</a>
+							<span class="text-category">IOT</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Weld Defect Detection</a>
+							<span class="text-category">Machine Learning</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/app/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Voice Notepad & Prescription</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/icon/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Smart Garbage Collection</a>
+							<span class="text-category">IOT</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																
+
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">VR Furnitures</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+																		
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Smart Health Monitoring</a>
+							<span class="text-category">IOT</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Low Light Facial Recognition</a>
+							<span class="text-category">Machine Learning</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+										
+			
+		</div>
+		
+	</div><!-- container -->
+
+                </section>
+					<!-- #my works -->
+
+
+
+
+
+
+                <!-- ability -->
+                <section class="skill px-4 py-1 bg-light" id="ability">
+                        <div class="ability ">
+                            <h5 class="text-uppercase font-os font-size-16 text-muted">Ability</h5>
+                            <h2 class="text-uppercase font-staat font-size-34">My skills</h2>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-sm-12 bars">
+                                <div class="wow fadeInRight" >
+					<div class="activa">
+					<div>
+						<label> <ul><li>Programming Language : Java, C, Python</li> </ul></label>
+					</div>
+					<div>
+						<label><ul><li>Database : MySQL, Firebase</li></ul></label>
+					</div>
+					<div>
+						<label><ul><li>Front-End : HTML, CSS, Bootstrap</li></ul></label>
+					</div>
+					<div>
+						<label><ul><li>Back-End : PHP, JS, Flask</li></ul></label>
+					</div>
+					
+					<div>
+						<label><ul><li>Domains : Android Development, Machine Learning</li></ul></label>
+					</div>
+					</div>
+					</div>
+					</div>
+					</div>
+
+					
+					
+					<div class="ability">
+                            <h2 class="text-uppercase font-staat font-size-34">Education</h2>
+                        </div>
+                        <div class="row">
+                            
+                    <div class="col-sm-12 bars">
+                    <div class="wow fadeInRight" >
+					<div class="activa">
+					<div>
+						<label> <ul><li>Completed B.E. (Bachelor of Engineering), Computer Engineering from SIES GST  &nbsp &nbsp &nbsp &nbsp  &nbsp   ~ &nbsp 2016 - 2020</li> </ul></label>
+					</div>
+					<div>
+						<label><ul><li>Completed HSC from SIES College of Arts, Science & Commerce with 87.08% &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp  ~ &nbsp 2015 - 2016</li></ul></label>
+					</div>
+					
+					<div> 
+						<label><ul><li>Completed SSC from SIES High School with 93.20%   &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp~ &nbsp 2013 - 2014</li></ul></label>
+					</div>
+					</div>
+					
+					
+				</div>
+                        </div>
+						</div>
+					
+						
+						
+						
+					<div class="ability">
+                            <h2 class="text-uppercase font-staat font-size-34">Internships</h2>
+                    </div>
+					<div class="row">
+                        
+					
+					<div class="col-sm-12 bars">
+                    <div class="wow fadeInRight" >
+					<div class="activa">
+					<div>
+						<label> <ul><li><h3>BARC Mumbai</h3>Learned Matlab and worked with team of 4 members to implement Weld Defect Detection in radiographic image.<p></p></li> </ul></label>
+					</div>
+					<div>
+						<label><ul><li><h3>SIES GST, Mumbai</h3>Learned Web Development and implemented Faculty Activity Data Management System.</li></ul></label>
+					</div>
+					</div>
+					
+				</div>
+                        </div>
+						
+						
+						
+						
+						
+                    </section>
+                <!-- #ability -->
+
+
+            </div>
+        </div>
+    </main>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+
+<script src="./vendor/typed/typed.min.js"></script>
+
+<script src="js/index.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.app, .card, .icon, .logo, .web'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+</body>
+</html>
